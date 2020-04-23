@@ -95,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //Actualisation de la liste
             listeMemoDTO.add(newMemo);
             memoAdapter.notifyItemInserted(listeMemoDTO.size());
+            //Reset de l'input
+            inputMemo.setText("");
         }
 
     }
